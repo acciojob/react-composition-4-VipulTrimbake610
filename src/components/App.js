@@ -16,7 +16,7 @@ const App = () => {
           <label htmlFor="">Password</label>
           <input type="password"  onChange={(e)=>setValues({...values, password:e.target.value})}/>
 
-          <button onClick={(e)=>{e.preventDefault();console.log(values);}}>Submit</button>
+          <button onSubmit={(e)=>{console.log(values);}}>Submit</button>
         </form>
     </div>
   )
